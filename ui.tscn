@@ -1,0 +1,107 @@
+[gd_scene load_steps=5 format=3 uid="uid://dstbigohnjky2"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_4m5mi"]
+[ext_resource type="Texture2D" uid="uid://0l47hwfmllj1" path="res://illustration-of-a-stone-with-a-cartoon-style-png.png" id="2_5285a"]
+[ext_resource type="Texture2D" uid="uid://dcq7n6dtpyox4" path="res://pngtree-cartoon-nail-tools-png-image_6571282.png" id="3_mlnb2"]
+[ext_resource type="Texture2D" uid="uid://bdcii2wbpfyym" path="res://wooden-badge-banner-wooden-plank-plate-png.png" id="4_37sel"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_4m5mi")
+
+[node name="ResourceBox" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 204.0
+offset_bottom = 112.0
+theme_override_constants/separation = 50
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ResourceBox"]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="ResourceBox/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="StoneInventory" type="TextureRect" parent="ResourceBox/HBoxContainer"]
+custom_minimum_size = Vector2(500, 450)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_5285a")
+
+[node name="StoneCounter" type="Label" parent="ResourceBox/HBoxContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.884314, 3.34509e-06, 3.85046e-07, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 35
+theme_override_constants/shadow_outline_size = 65
+theme_override_font_sizes/font_size = 200
+text = "0"
+vertical_alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ResourceBox"]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="ResourceBox/HBoxContainer2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="NailsInventory" type="TextureRect" parent="ResourceBox/HBoxContainer2"]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+texture = ExtResource("3_mlnb2")
+
+[node name="NailsCounter" type="Label" parent="ResourceBox/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.884314, 3.34509e-06, 3.85046e-07, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 35
+theme_override_constants/shadow_outline_size = 65
+theme_override_font_sizes/font_size = 200
+text = "0"
+vertical_alignment = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="ResourceBox"]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="MarginContainer3" type="MarginContainer" parent="ResourceBox/HBoxContainer3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
+[node name="WoodInventory" type="TextureRect" parent="ResourceBox/HBoxContainer3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_37sel")
+
+[node name="WoodCounter" type="Label" parent="ResourceBox/HBoxContainer3"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.884314, 3.34509e-06, 3.85046e-07, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 35
+theme_override_constants/shadow_outline_size = 65
+theme_override_font_sizes/font_size = 200
+text = "0"
+vertical_alignment = 2
