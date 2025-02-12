@@ -29,8 +29,9 @@ func spawn_resources(resource_scene: PackedScene, count: int, width: float, heig
 		var resource = resource_scene.instantiate()
 
 		# Calculate random position within the adjusted bounds
-		var random_x = randf_range(0, width)
-		var random_y = randf_range(0, height)
+		var padding = 1500  # Adjust as needed
+		var random_x = randf_range(padding, width - padding)
+		var random_y = randf_range(padding, height - padding)
 		resource.position = Vector2(random_x, random_y)
 
 		# Add the resource to the scene
