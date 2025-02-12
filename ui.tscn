@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dstbigohnjky2"]
+[gd_scene load_steps=6 format=3 uid="uid://dstbigohnjky2"]
 
 [ext_resource type="Script" path="res://ui.gd" id="1_4m5mi"]
-[ext_resource type="Texture2D" uid="uid://y8c1fl4knro6" path="res://illustration-of-a-stone-with-a-cartoon-style-png.png" id="2_5285a"]
-[ext_resource type="Texture2D" uid="uid://bmyb54mml6y07" path="res://pngtree-cartoon-nail-tools-png-image_6571282.png" id="3_mlnb2"]
-[ext_resource type="Texture2D" uid="uid://c08oa72u2apcw" path="res://wooden-badge-banner-wooden-plank-plate-png.png" id="4_37sel"]
+[ext_resource type="Texture2D" uid="uid://0l47hwfmllj1" path="res://illustration-of-a-stone-with-a-cartoon-style-png.png" id="2_5285a"]
+[ext_resource type="Texture2D" uid="uid://dcq7n6dtpyox4" path="res://pngtree-cartoon-nail-tools-png-image_6571282.png" id="3_mlnb2"]
+[ext_resource type="Texture2D" uid="uid://bdcii2wbpfyym" path="res://wooden-badge-banner-wooden-plank-plate-png.png" id="4_37sel"]
+[ext_resource type="Script" path="res://build_menu.gd" id="5_hucwq"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -110,12 +111,42 @@ vertical_alignment = 2
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("5_hucwq")
+
+[node name="ToggleMenu" type="Button" parent="BuildMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12139.0
+offset_top = 112.0
+offset_right = 13248.0
+offset_bottom = 353.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 100
+theme_override_font_sizes/font_size = 200
+text = "Build Menu"
+icon_alignment = 2
 
 [node name="TabContainer" type="TabContainer" parent="BuildMenu"]
 custom_minimum_size = Vector2(4000, 8000)
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_direction = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 7368.0
+offset_top = 739.0
+offset_right = 13286.0
+offset_bottom = 8739.0
+grow_horizontal = 0
+grow_vertical = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 75
 theme_override_font_sizes/font_size = 250
