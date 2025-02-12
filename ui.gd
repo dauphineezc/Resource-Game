@@ -20,6 +20,6 @@ func add_wood(amount):
 	update_resource_counters()
 
 func update_resource_counters():
-	$HBoxContainer/StoneCounter.text = str(stone_count)
-	$HBoxContainer2/NailsCounter.text = str(nail_count)
-	$HBoxContainer3/WoodCounter.text = str(wood_count)
+	$ResourceBox/HBoxContainer/StoneCounter.text = str(stone_count)
+	$ResourceBox/HBoxContainer2/NailsCounter.text = str(nail_count)
+	$ResourceBox/HBoxContainer3/WoodCounter.text = str(wood_count)

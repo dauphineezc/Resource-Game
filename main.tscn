@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://co4qrf5ic3ont"]
+
+[ext_resource type="Texture2D" uid="uid://bjp3mixbo08ya" path="res://Scene/GrassScene.png" id="1_j2y5b"]
+[ext_resource type="PackedScene" uid="uid://dstbigohnjky2" path="res://ui.tscn" id="1_vmk1h"]
+
+[node name="main" type="Node2D"]
+scale = Vector2(0.08, 0.08)
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(7214.22, 4058)
+scale = Vector2(23.5444, 23.5444)
+texture = ExtResource("1_j2y5b")
+
+[node name="ResourceSpawner" type="Node2D" parent="."]
+
+[node name="Structures" type="Node2D" parent="."]
+
+[node name="UI" parent="." instance=ExtResource("1_vmk1h")]

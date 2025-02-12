@@ -239,3 +239,7 @@ horizontal_alignment = 1
 
 [node name="GridContainer5" type="GridContainer" parent="BuildMenu/TabContainer/Buildings"]
 layout_mode = 2
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="Node2D"]
