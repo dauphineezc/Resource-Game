@@ -21,5 +21,6 @@ func add_nail(amount):
 
 func update_resource_counters():
 	$ResourceBox/HBoxContainer/StoneCounter.text = str(stone_count)
-	$ResourceBox/HBoxContainer2/WoodCounter.text = str(wood_count)
-	$ResourceBox/HBoxContainer3/NailCounter.text = str(nail_count)
+	$ResourceBox/HBoxContainer2/NailsCounter.text = str(nail_count)
+	$ResourceBox/HBoxContainer3/WoodCounter.text = str(wood_count)
+	
