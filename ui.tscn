@@ -105,3 +105,106 @@ theme_override_constants/shadow_outline_size = 65
 theme_override_font_sizes/font_size = 200
 text = "0"
 vertical_alignment = 2
+
+[node name="BuildMenu" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TabContainer" type="TabContainer" parent="BuildMenu"]
+custom_minimum_size = Vector2(4000, 8000)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 75
+theme_override_font_sizes/font_size = 250
+current_tab = 1
+clip_tabs = false
+use_hidden_tabs_for_min_size = true
+
+[node name="Roads" type="VBoxContainer" parent="BuildMenu/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="RoadCost" type="Label" parent="BuildMenu/TabContainer/Roads"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 50
+theme_override_font_sizes/font_size = 200
+text = "Cost: Stone x1"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="BuildMenu/TabContainer/Roads"]
+layout_mode = 2
+columns = 3
+
+[node name="Fences" type="VBoxContainer" parent="BuildMenu/TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="FenceCost" type="Label" parent="BuildMenu/TabContainer/Fences"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 50
+theme_override_font_sizes/font_size = 200
+text = "Cost: Wood x1"
+horizontal_alignment = 1
+
+[node name="GridContainer2" type="GridContainer" parent="BuildMenu/TabContainer/Fences"]
+layout_mode = 2
+
+[node name="Nature" type="VBoxContainer" parent="BuildMenu/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="NatureCost" type="Label" parent="BuildMenu/TabContainer/Nature"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 50
+theme_override_font_sizes/font_size = 200
+text = "you'd think a rock would cost a rock but we're nice so it's free 
+(you're welcome)"
+horizontal_alignment = 1
+
+[node name="GridContainer3" type="GridContainer" parent="BuildMenu/TabContainer/Nature"]
+layout_mode = 2
+
+[node name="Decor" type="VBoxContainer" parent="BuildMenu/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="DecorCost" type="Label" parent="BuildMenu/TabContainer/Decor"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 50
+theme_override_font_sizes/font_size = 200
+text = "Cost: Wood x1, Nails x1"
+horizontal_alignment = 1
+
+[node name="GridContainer4" type="GridContainer" parent="BuildMenu/TabContainer/Decor"]
+layout_mode = 2
+
+[node name="Buildings" type="VBoxContainer" parent="BuildMenu/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 4
+
+[node name="BuildingCost" type="Label" parent="BuildMenu/TabContainer/Buildings"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 50
+theme_override_font_sizes/font_size = 200
+text = "Cost: Stone x2, Wood x2, Nails x2"
+horizontal_alignment = 1
+
+[node name="GridContainer5" type="GridContainer" parent="BuildMenu/TabContainer/Buildings"]
+layout_mode = 2
