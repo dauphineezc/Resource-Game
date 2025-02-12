@@ -26,6 +26,7 @@ signal asset_selected(asset_path, position)
 func _ready():
 	hide()  # Start with the menu hidden
 	populate_grids()
+	$ToggleMenu.connect("pressed", Callable(self, "toggle_menu"))
 
 func populate_grids():
 	# Iterate over the keys (grid node paths) in the dictionary.
