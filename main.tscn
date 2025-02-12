@@ -1,18 +1,36 @@
-[gd_scene load_steps=3 format=3 uid="uid://co4qrf5ic3ont"]
+[gd_scene load_steps=7 format=3 uid="uid://co4qrf5ic3ont"]
 
 [ext_resource type="Texture2D" uid="uid://bjp3mixbo08ya" path="res://Scene/GrassScene.png" id="1_j2y5b"]
 [ext_resource type="PackedScene" uid="uid://dstbigohnjky2" path="res://ui.tscn" id="1_vmk1h"]
+[ext_resource type="Script" path="res://resource_spawner.gd" id="2_43oup"]
+[ext_resource type="PackedScene" uid="uid://b1nqos2ka1mrq" path="res://wood.tscn" id="3_gqcu7"]
+[ext_resource type="PackedScene" uid="uid://bsd8ntkee4o1" path="res://stone.tscn" id="4_r0o8d"]
+[ext_resource type="PackedScene" uid="uid://bdc3hqmhmnhxa" path="res://fence.tscn" id="5_36i52"]
 
 [node name="main" type="Node2D"]
-scale = Vector2(0.08, 0.08)
+scale = Vector2(0.075, 0.075)
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(7214.22, 4058)
-scale = Vector2(23.5444, 23.5444)
+position = Vector2(7671.88, 4313.09)
+scale = Vector2(23.9643, 23.9643)
 texture = ExtResource("1_j2y5b")
 
 [node name="ResourceSpawner" type="Node2D" parent="."]
+script = ExtResource("2_43oup")
+wood_scene = ExtResource("3_gqcu7")
+stone_scene = ExtResource("4_r0o8d")
+fence_scene = ExtResource("5_36i52")
+
+[node name="Wood" parent="ResourceSpawner" instance=ExtResource("3_gqcu7")]
+
+[node name="Stone" parent="ResourceSpawner" instance=ExtResource("4_r0o8d")]
+
+[node name="Fence" parent="ResourceSpawner" instance=ExtResource("5_36i52")]
 
 [node name="Structures" type="Node2D" parent="."]
 
 [node name="UI" parent="." instance=ExtResource("1_vmk1h")]
+offset_left = 346.667
+offset_top = 333.333
+offset_right = 386.667
+offset_bottom = 373.333

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsd8ntkee4o1"]
+
+[ext_resource type="Texture2D" uid="uid://wuvoadtqtlgu" path="res://Nature/stone5.png" id="1_c731f"]
+
+[node name="Stone" type="Sprite2D"]
+position = Vector2(286.031, 254.25)
+scale = Vector2(64.5625, 64.5625)
+texture = ExtResource("1_c731f")
+centered = false

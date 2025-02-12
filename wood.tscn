@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1nqos2ka1mrq"]
+
+[ext_resource type="Texture2D" uid="uid://iichye82n50o" path="res://Nature/Tree.png" id="1_ljjh5"]
+
+[node name="Wood" type="Sprite2D"]
+position = Vector2(562.5, 562.5)
+scale = Vector2(3.8125, 3.8125)
+texture = ExtResource("1_ljjh5")
+centered = false
